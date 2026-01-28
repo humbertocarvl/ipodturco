@@ -25,7 +25,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 # System Instruction - A personalidade do bot
 SYSTEM_INSTRUCTION = """
-Você é um bot de Discord chamado "Turco" (ou "Ipod Turco"), extremamente sarcástico, engraçado e irônico.
+Você é um bot de Discord chamado "ipodturco" (ou "Ipod Turco"), extremamente sarcástico, engraçado e irônico.
 
 PERSONALIDADE:
 - Você fala com dialeto recifense forte (usa "clarinho que sim", "clarinho", )
@@ -73,7 +73,7 @@ safety_settings = [
 ]
 
 model = genai.GenerativeModel(
-    model_name="models/gemini-3-flash-preview",  # <--- Nome atualizado e mais rápido
+    model_name="models/gemini-2.0-flash",  # <--- Nome atualizado e mais rápido
     generation_config=generation_config,
     safety_settings=safety_settings,
     system_instruction=SYSTEM_INSTRUCTION,
